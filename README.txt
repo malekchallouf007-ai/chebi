@@ -23,3 +23,6 @@ Publication GitHub Pages :
 
 Note :
 Le Scanner et l'Assistant sont des prototypes front-end. Une vraie analyse IA nécessite un modèle/API côté serveur.
+
+
+AJOUT : tunisie-plus-propre.jpeg — visuel Tunisie plus propre intégré dans une section dédiée.

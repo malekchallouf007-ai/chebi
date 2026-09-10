@@ -84,3 +84,20 @@ footer{padding:28px 7vw;background:#03111f;color:#8fa2b4;display:flex;align-item
 .maquette-caption{display:flex;flex-wrap:wrap;gap:.8rem;padding:1.15rem;justify-content:center;background:rgba(0,0,0,.28);}
 .maquette-caption span{padding:.7rem 1.05rem;border-radius:999px;background:rgba(255,255,255,.09);color:#fff;font-weight:700;font-size:.92rem;}
 @media(max-width:700px){.maquette-card{border-radius:18px}.maquette-card img{min-height:200px}.maquette-caption{gap:.5rem}.maquette-caption span{font-size:.78rem;padding:.55rem .75rem}}
+
+/* Tunisie plus propre */
+.clean-tunisia-section{position:relative}
+.clean-tunisia-card{display:grid;grid-template-columns:1.25fr .75fr;gap:0;overflow:hidden;border:1px solid rgba(91,232,154,.18);border-radius:28px;background:linear-gradient(135deg,rgba(11,24,39,.96),rgba(8,17,29,.98));box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.clean-tunisia-image-wrap{position:relative;min-height:420px;overflow:hidden}
+.clean-tunisia-image-wrap img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block;transition:transform 1.2s ease}
+.clean-tunisia-card:hover .clean-tunisia-image-wrap img{transform:scale(1.045)}
+.clean-tunisia-badge{position:absolute;left:22px;bottom:22px;padding:11px 16px;border-radius:999px;background:rgba(5,16,26,.86);border:1px solid rgba(91,232,154,.45);color:#8ff0ae;font-weight:800;font-size:.82rem;backdrop-filter:blur(10px)}
+.clean-tunisia-content{padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.clean-tunisia-content h3{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.1;margin:16px 0}
+.clean-tunisia-content p{color:#b9c6d4;line-height:1.75}
+.clean-features{display:grid;gap:12px;margin:24px 0}
+.clean-features div{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07)}
+.clean-features strong{color:#62e995;font-size:.85rem}
+.clean-features span{font-weight:700}
+.clean-quote{margin-top:8px;padding:16px 18px;border-left:3px solid #62e995;background:rgba(98,233,149,.06);color:#e7fff0;font-style:italic;line-height:1.6}
+@media(max-width:850px){.clean-tunisia-card{grid-template-columns:1fr}.clean-tunisia-image-wrap,.clean-tunisia-image-wrap img{min-height:300px}.clean-tunisia-content{padding:30px 24px}}
