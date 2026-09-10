@@ -1,506 +1,378 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="POÉSIE AI — expérience interactive autour de la poésie tunisienne et de l'intelligence artificielle."
-    />
-    <title>POÉSIE AI — La poésie tunisienne, réinventée par l'IA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <a class="brand" href="#accueil"
-        ><span class="brand-mark">✒</span
-        ><span>POÉSIE <strong>AI</strong></span></a
-      >
-      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
-        ☰
-      </button>
-      <nav id="nav">
-        <a href="#accueil">Accueil</a>
-        <a href="#poetes">Poètes</a>
-        <a href="#scanner">Scanner IA</a>
-        <a href="#experience">Expérience</a>
-        <a href="#assistant">Assistant IA</a>
-        <a href="#qr">QR Code</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="POÉSIE AI — expérience interactive autour de la poésie tunisienne et de l'intelligence artificielle." />
+  <title>POÉSIE AI — La poésie tunisienne, réinventée par l'IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil"><span class="brand-mark">✒</span><span>POÉSIE <strong>AI</strong></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    <nav id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#poetes">Poètes</a>
+      <a href="#scanner">Scanner IA</a>
+      <a href="#experience">Expérience</a>
+      <a href="#assistant">Assistant IA</a>
+      <a href="#qr">QR Code</a>
+    
+<a href="#ya-tounes">Ya Tounes</a>
+<a href="#video-poesie">Vidéo</a>
+<a href="#maquette">Maquette</a></nav>
+  </header>
 
-        <a href="#ya-tounes">Ya Tounes</a>
-        <a href="#video-poesie">Vidéo</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero" id="accueil">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content reveal">
-          <div class="eyebrow">
-            PATRIMOINE • POÉSIE • INTELLIGENCE ARTIFICIELLE
-          </div>
-          <h1>La poésie tunisienne,<br /><span>une voix pour demain.</span></h1>
-          <p>
-            Une expérience numérique qui aide les jeunes à découvrir, comprendre
-            et transmettre le message des poètes tunisiens grâce à l'IA.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#scanner">Essayer le Scanner IA</a>
-            <a class="btn ghost" href="#poetes">Découvrir les poètes</a>
-          </div>
-          <div class="hero-stats">
-            <div><strong>3</strong><span>expériences interactives</span></div>
-            <div><strong>IA</strong><span>analyse & interprétation</span></div>
-            <div><strong>100%</strong><span>responsive</span></div>
-          </div>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow">PATRIMOINE • POÉSIE • INTELLIGENCE ARTIFICIELLE</div>
+        <h1>La poésie tunisienne,<br><span>une voix pour demain.</span></h1>
+        <p>Une expérience numérique qui aide les jeunes à découvrir, comprendre et transmettre le message des poètes tunisiens grâce à l'IA.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#scanner">Essayer le Scanner IA</a>
+          <a class="btn ghost" href="#poetes">Découvrir les poètes</a>
         </div>
-        <div class="hero-card reveal">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Aboul%20Kacem%20Chebbi.jpg"
-            alt="Portrait réel d'Aboul Kacem Chebbi"
-          />
-          <div class="hero-card-info">
-            <span>Poète à l'honneur</span>
-            <strong>Aboul Kacem Chebbi</strong>
-            <small>Poète tunisien • 1909–1934</small>
-          </div>
+        <div class="hero-stats">
+          <div><strong>3</strong><span>expériences interactives</span></div>
+          <div><strong>IA</strong><span>analyse & interprétation</span></div>
+          <div><strong>100%</strong><span>responsive</span></div>
         </div>
-      </section>
-
-      <section class="section intro">
-        <div class="section-heading reveal">
-          <span class="section-number">01</span>
-          <div>
-            <p class="kicker">NOTRE IDÉE</p>
-            <h2>Faire vivre le message de la poésie avec l'IA</h2>
-          </div>
-        </div>
-        <div class="intro-grid">
-          <article class="glass-card reveal">
-            <div class="icon">🧠</div>
-            <h3>Comprendre</h3>
-            <p>
-              L'IA propose une lecture simple du thème, des émotions et des
-              symboles d'un texte ou d'une image liée à la poésie.
-            </p>
-          </article>
-          <article class="glass-card reveal">
-            <div class="icon">🎨</div>
-            <h3>Visualiser</h3>
-            <p>
-              Le message poétique devient une expérience visuelle à travers des
-              ambiances, mots-clés et cartes d'émotions.
-            </p>
-          </article>
-          <article class="glass-card reveal">
-            <div class="icon">🌍</div>
-            <h3>Transmettre</h3>
-            <p>
-              Une interface claire, multilingue et accessible aide un public
-              plus large à découvrir le patrimoine littéraire tunisien.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section dark-section" id="poetes">
-        <div class="section-heading reveal">
-          <span class="section-number">02</span>
-          <div>
-            <p class="kicker">POÈTES TUNISIENS</p>
-            <h2>Des voix qui ont marqué la mémoire tunisienne</h2>
-          </div>
-        </div>
-
-        <div class="poet-grid">
-          <article class="poet-card featured reveal">
-            <div class="poet-photo">
-              <img
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Aboul%20Kacem%20Chebbi.jpg"
-                alt="Portrait d'Aboul Kacem Chebbi"
-              />
-            </div>
-            <div class="poet-body">
-              <span class="pill">Poésie • Tunisie</span>
-              <h3>Aboul Kacem Chebbi</h3>
-              <p>
-                Sa poésie est souvent associée à l'espoir, la volonté, la
-                liberté et la force de vivre. Le projet s'inspire de ces valeurs
-                sans reproduire l'œuvre.
-              </p>
-              <button class="text-btn analyze-poet" data-poet="chebbi">
-                Explorer avec l'IA →
-              </button>
-            </div>
-          </article>
-
-          <article class="poet-card reveal">
-            <div class="poet-photo">
-              <img
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg"
-                alt="Photo réelle de la médina de Tozeur"
-              />
-            </div>
-            <div class="poet-body">
-              <span class="pill">Lieu • Mémoire</span>
-              <h3>Tozeur, terre de poésie</h3>
-              <p>
-                Une image réelle de Tozeur sert de point de départ pour relier
-                paysage, identité, mémoire et inspiration poétique.
-              </p>
-              <button class="text-btn analyze-poet" data-poet="tozeur">
-                Explorer avec l'IA →
-              </button>
-            </div>
-          </article>
-
-          <article class="poet-card reveal">
-            <div class="poet-photo">
-              <img
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Medina%20de%20TUNIS.jpg"
-                alt="Photo réelle de la médina de Tunis"
-              />
-            </div>
-            <div class="poet-body">
-              <span class="pill">Patrimoine • Tunis</span>
-              <h3>La médina comme inspiration</h3>
-              <p>
-                Le patrimoine visuel tunisien peut devenir une porte d'entrée
-                vers l'écriture, la mémoire et la création contemporaine.
-              </p>
-              <button class="text-btn analyze-poet" data-poet="medina">
-                Explorer avec l'IA →
-              </button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section scanner-section" id="scanner">
-        <div class="section-heading reveal">
-          <span class="section-number">03</span>
-          <div>
-            <p class="kicker">SCANNER IA</p>
-            <h2>Analyse une image et transforme-la en lecture poétique</h2>
-          </div>
-        </div>
-
-        <div class="scanner-layout">
-          <div class="scanner-panel reveal">
-            <label class="drop-zone" id="dropZone" for="imageInput">
-              <input id="imageInput" type="file" accept="image/*" hidden />
-              <div id="uploadPrompt">
-                <div class="upload-icon">＋</div>
-                <h3>Importer une image</h3>
-                <p>Portrait, paysage, patrimoine, œuvre artistique…</p>
-                <span>JPG • PNG • WEBP</span>
-              </div>
-              <img id="previewImage" alt="Aperçu de l'image sélectionnée" />
-              <div class="scan-line" id="scanLine"></div>
-            </label>
-            <button class="btn primary full" id="analyzeBtn" disabled>
-              Analyser avec l'IA
-            </button>
-            <p class="microcopy">
-              Prototype pédagogique : l'analyse affichée simule le
-              fonctionnement d'un futur modèle IA.
-            </p>
-          </div>
-
-          <div class="analysis-panel reveal">
-            <div class="analysis-placeholder" id="analysisPlaceholder">
-              <div class="ai-orb">AI</div>
-              <h3>Prêt pour l'analyse</h3>
-              <p>
-                Ajoute une image pour obtenir une interprétation poétique
-                interactive.
-              </p>
-            </div>
-            <div class="analysis-result" id="analysisResult">
-              <div class="result-top">
-                <span class="status-dot"></span>
-                <span>Analyse terminée</span>
-              </div>
-              <h3 id="resultTitle">Lecture poétique</h3>
-              <p id="resultText"></p>
-              <div class="meter-wrap">
-                <div class="meter-row">
-                  <span>Émotion</span><strong id="emotionValue">84%</strong>
-                </div>
-                <div class="meter"><span id="emotionBar"></span></div>
-              </div>
-              <div class="keywords" id="keywords"></div>
-              <div class="mini-grid">
-                <div>
-                  <span>Thème dominant</span
-                  ><strong id="themeValue">Espoir</strong>
-                </div>
-                <div>
-                  <span>Ambiance</span
-                  ><strong id="moodValue">Contemplative</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section experience-section" id="experience">
-        <div class="section-heading reveal">
-          <span class="section-number">04</span>
-          <div>
-            <p class="kicker">EXPÉRIENCE INTERACTIVE</p>
-            <h2>Du patrimoine visuel au message poétique</h2>
-          </div>
-        </div>
-
-        <div class="experience-card reveal">
-          <div class="exp-image">
-            <img
-              id="experienceImage"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg"
-              alt="Tozeur"
-            />
-            <div class="exp-shade"></div>
-            <div class="floating-word word1">Mémoire</div>
-            <div class="floating-word word2">Espoir</div>
-            <div class="floating-word word3">Liberté</div>
-            <div class="floating-word word4">Identité</div>
-          </div>
-          <div class="exp-content">
-            <span class="pill">Mode inspiration</span>
-            <h3 id="experienceTitle">Tozeur : mémoire & horizon</h3>
-            <p id="experienceText">
-              Choisis une ambiance pour voir comment un même paysage peut
-              transmettre plusieurs lectures poétiques.
-            </p>
-            <div class="mood-buttons">
-              <button class="mood active" data-mood="espoir">Espoir</button>
-              <button class="mood" data-mood="memoire">Mémoire</button>
-              <button class="mood" data-mood="liberte">Liberté</button>
-            </div>
-            <div class="generated-card">
-              <span>INTERPRÉTATION IA</span>
-              <p id="generatedText">
-                Un paysage lumineux devient un symbole de continuité : le passé
-                nourrit la création du futur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section assistant-section" id="assistant">
-        <div class="section-heading reveal">
-          <span class="section-number">05</span>
-          <div>
-            <p class="kicker">ASSISTANT IA</p>
-            <h2>Pose une question sur la poésie tunisienne</h2>
-          </div>
-        </div>
-
-        <div class="chat-shell reveal">
-          <div class="chat-head">
-            <div class="bot-avatar">✦</div>
-            <div>
-              <strong>Poésie AI Assistant</strong
-              ><span>Prototype éducatif</span>
-            </div>
-            <span class="online">● En ligne</span>
-          </div>
-          <div class="chat-body" id="chatBody">
-            <div class="message bot">
-              Bonjour ! Je peux t'aider à comprendre les thèmes, les symboles et
-              le rôle de la poésie tunisienne dans notre patrimoine.
-            </div>
-          </div>
-          <div class="quick-questions">
-            <button
-              data-question="Pourquoi la poésie est-elle importante pour le patrimoine tunisien ?"
-            >
-              Pourquoi la poésie est-elle importante ?
-            </button>
-            <button
-              data-question="Quels thèmes retrouve-t-on souvent dans la poésie tunisienne ?"
-            >
-              Quels thèmes retrouve-t-on ?
-            </button>
-            <button
-              data-question="Comment l'IA peut-elle aider les jeunes à découvrir la poésie ?"
-            >
-              Comment l'IA peut-elle aider ?
-            </button>
-          </div>
-          <form class="chat-input" id="chatForm">
-            <input
-              id="chatInput"
-              type="text"
-              placeholder="Écris ta question..."
-              autocomplete="off"
-            />
-            <button type="submit">Envoyer</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="section gallery-section">
-        <div class="section-heading reveal">
-          <span class="section-number">06</span>
-          <div>
-            <p class="kicker">PHOTOGRAPHIES RÉELLES</p>
-            <h2>Le patrimoine tunisien en images</h2>
-          </div>
-        </div>
-        <div class="gallery">
-          <figure class="reveal">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Abou-El-Kacem-Chebbi.jpg"
-              alt="Représentation réelle d'Aboul Kacem Chebbi"
-            />
-            <figcaption>Aboul Kacem Chebbi</figcaption>
-          </figure>
-          <figure class="reveal">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Graffiti%20portrait%20Abou%20el%20Kacem%20Chebbi%20%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%AA%D9%8A%20%D8%B5%D9%88%D8%B1%D8%A9%20%D9%84%D8%A3%D8%A8%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D8%A8%D9%8A.jpg"
-              alt="Graffiti d'Aboul Kacem Chebbi à La Marsa"
-            />
-            <figcaption>Chebbi dans l'espace urbain</figcaption>
-          </figure>
-          <figure class="reveal">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg"
-              alt="Médina de Tozeur"
-            />
-            <figcaption>Tozeur, ville de mémoire</figcaption>
-          </figure>
-          <figure class="reveal">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Medina%20de%20TUNIS.jpg"
-              alt="Médina de Tunis"
-            />
-            <figcaption>Médina de Tunis</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section qr-section" id="qr">
-        <div class="qr-card reveal">
-          <div>
-            <p class="kicker">ACCÈS RAPIDE</p>
-            <h2>Scanne le QR Code</h2>
-            <p>
-              Une fois le projet publié sur GitHub Pages avec le dépôt
-              <strong>poesie-ai</strong>, ce QR Code ouvre directement le site.
-            </p>
-            <code>malekchallouf007-ai.github.io/poesie-ai/</code>
-          </div>
-          <div class="qr-box">
-            <img src="qr-poesie-ai.png" alt="QR Code POÉSIE AI" />
-            <span>POÉSIE AI</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section credits-section">
-        <div class="credits reveal">
-          <strong>Crédits des photographies réelles :</strong>
-          Wikimedia Commons — Aboul Kacem Chebbi (domaine public), photographies
-          de Tozeur et de la Médina de Tunis selon les licences indiquées sur
-          leurs pages respectives.
-        </div>
-      </section>
-
-      <section class="video-section" id="video-poesie">
-        <div class="section-kicker">VIDÉO • YA TOUNES EL KHADHRA</div>
-        <h2>La poésie en mouvement</h2>
-        <p class="section-intro">
-          Une séquence vidéo intégrée à l'expérience pour donner une dimension
-          audiovisuelle au message du projet.
-        </p>
-        <div class="video-card">
-          <video
-            controls
-            playsinline
-            preload="metadata"
-            poster="https://commons.wikimedia.org/wiki/Special:FilePath/Tozeur%20at%20night%20-%20Bled%20El%20Hadhar%20old%20town%20%28Tunisia%29.jpg"
-          >
-            <source src="ya-tounes-el-khadhra.mp4" type="video/mp4" />
-            Votre navigateur ne prend pas en charge la lecture vidéo.
-          </video>
-          <div class="video-caption">
-            <span>✦ POÉSIE AI</span>
-            <strong>Ya Tounes El Khadhra</strong>
-            <p>Vidéo fournie pour le projet.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="brand">
-        <span class="brand-mark">✒</span><span>POÉSIE <strong>AI</strong></span>
       </div>
-      <p>Projet éducatif • Tunisie • 2026</p>
-      <a href="#accueil">Retour en haut ↑</a>
+      <div class="hero-card reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aboul%20Kacem%20Chebbi.jpg" alt="Portrait réel d'Aboul Kacem Chebbi">
+        <div class="hero-card-info">
+          <span>Poète à l'honneur</span>
+          <strong>Aboul Kacem Chebbi</strong>
+          <small>Poète tunisien • 1909–1934</small>
+        </div>
+      </div>
+    </section>
 
-      <section class="poem-section" id="ya-tounes">
-        <div class="section-kicker">EXPÉRIENCE POÉTIQUE • 05</div>
-        <h2>« Ya Tounes El Khadhra » — espace poésie</h2>
-        <p class="section-intro">
-          Une création originale inspirée de l’attachement à la Tunisie, à sa
-          terre, à sa mémoire et à son avenir. Le texte ci-dessous est inédit et
-          peut servir de support à l’expérience IA.
-        </p>
+    <section class="section intro">
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div>
+          <p class="kicker">NOTRE IDÉE</p>
+          <h2>Faire vivre le message de la poésie avec l'IA</h2>
+        </div>
+      </div>
+      <div class="intro-grid">
+        <article class="glass-card reveal">
+          <div class="icon">🧠</div>
+          <h3>Comprendre</h3>
+          <p>L'IA propose une lecture simple du thème, des émotions et des symboles d'un texte ou d'une image liée à la poésie.</p>
+        </article>
+        <article class="glass-card reveal">
+          <div class="icon">🎨</div>
+          <h3>Visualiser</h3>
+          <p>Le message poétique devient une expérience visuelle à travers des ambiances, mots-clés et cartes d'émotions.</p>
+        </article>
+        <article class="glass-card reveal">
+          <div class="icon">🌍</div>
+          <h3>Transmettre</h3>
+          <p>Une interface claire, multilingue et accessible aide un public plus large à découvrir le patrimoine littéraire tunisien.</p>
+        </article>
+      </div>
+    </section>
 
-        <div class="poem-card">
-          <div class="poem-visual">
-            <div class="poem-glow"></div>
-            <span class="poem-badge">🇹🇳 POÉSIE TUNISIENNE</span>
-            <h3>Ya Tounes El Khadhra</h3>
-            <p>Terre de mémoire, de lumière et d’espoir.</p>
-            <button class="poem-play" id="poemRevealBtn" type="button">
-              ✦ Révéler le poème
-            </button>
+    <section class="section dark-section" id="poetes">
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <div>
+          <p class="kicker">POÈTES TUNISIENS</p>
+          <h2>Des voix qui ont marqué la mémoire tunisienne</h2>
+        </div>
+      </div>
+
+      <div class="poet-grid">
+        <article class="poet-card featured reveal">
+          <div class="poet-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aboul%20Kacem%20Chebbi.jpg" alt="Portrait d'Aboul Kacem Chebbi">
           </div>
+          <div class="poet-body">
+            <span class="pill">Poésie • Tunisie</span>
+            <h3>Aboul Kacem Chebbi</h3>
+            <p>Sa poésie est souvent associée à l'espoir, la volonté, la liberté et la force de vivre. Le projet s'inspire de ces valeurs sans reproduire l'œuvre.</p>
+            <button class="text-btn analyze-poet" data-poet="chebbi">Explorer avec l'IA →</button>
+          </div>
+        </article>
 
-          <div class="poem-text" id="poemText">
-            <p class="poem-line">
-              Ya Tounes el khadhra, ya terre qui nous rassemble,
-            </p>
-            <p class="poem-line">
-              dans tes rues la mémoire avance et le rêve ressemble.
-            </p>
-            <p class="poem-line">
-              Entre la mer et les oliviers, ton histoire nous appelle,
-            </p>
-            <p class="poem-line">
-              et chaque voix porte un espoir nouveau sous ton ciel.
-            </p>
-            <p class="poem-line">
-              Nous gardons tes mots, tes couleurs et tes traces,
-            </p>
-            <p class="poem-line">
-              pour bâtir demain sans oublier nos racines et nos places.
-            </p>
-            <p class="poem-line">Ya Tounes, notre mémoire devient lumière,</p>
-            <p class="poem-line">
-              et notre jeunesse écrit une nouvelle page, fière.
-            </p>
-            <div class="poem-note">
-              Texte original créé pour le projet POÉSIE AI.
+        <article class="poet-card reveal">
+          <div class="poet-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg" alt="Photo réelle de la médina de Tozeur">
+          </div>
+          <div class="poet-body">
+            <span class="pill">Lieu • Mémoire</span>
+            <h3>Tozeur, terre de poésie</h3>
+            <p>Une image réelle de Tozeur sert de point de départ pour relier paysage, identité, mémoire et inspiration poétique.</p>
+            <button class="text-btn analyze-poet" data-poet="tozeur">Explorer avec l'IA →</button>
+          </div>
+        </article>
+
+        <article class="poet-card reveal">
+          <div class="poet-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medina%20de%20TUNIS.jpg" alt="Photo réelle de la médina de Tunis">
+          </div>
+          <div class="poet-body">
+            <span class="pill">Patrimoine • Tunis</span>
+            <h3>La médina comme inspiration</h3>
+            <p>Le patrimoine visuel tunisien peut devenir une porte d'entrée vers l'écriture, la mémoire et la création contemporaine.</p>
+            <button class="text-btn analyze-poet" data-poet="medina">Explorer avec l'IA →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section scanner-section" id="scanner">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div>
+          <p class="kicker">SCANNER IA</p>
+          <h2>Analyse une image et transforme-la en lecture poétique</h2>
+        </div>
+      </div>
+
+      <div class="scanner-layout">
+        <div class="scanner-panel reveal">
+          <label class="drop-zone" id="dropZone" for="imageInput">
+            <input id="imageInput" type="file" accept="image/*" hidden>
+            <div id="uploadPrompt">
+              <div class="upload-icon">＋</div>
+              <h3>Importer une image</h3>
+              <p>Portrait, paysage, patrimoine, œuvre artistique…</p>
+              <span>JPG • PNG • WEBP</span>
+            </div>
+            <img id="previewImage" alt="Aperçu de l'image sélectionnée">
+            <div class="scan-line" id="scanLine"></div>
+          </label>
+          <button class="btn primary full" id="analyzeBtn" disabled>Analyser avec l'IA</button>
+          <p class="microcopy">Prototype pédagogique : l'analyse affichée simule le fonctionnement d'un futur modèle IA.</p>
+        </div>
+
+        <div class="analysis-panel reveal">
+          <div class="analysis-placeholder" id="analysisPlaceholder">
+            <div class="ai-orb">AI</div>
+            <h3>Prêt pour l'analyse</h3>
+            <p>Ajoute une image pour obtenir une interprétation poétique interactive.</p>
+          </div>
+          <div class="analysis-result" id="analysisResult">
+            <div class="result-top">
+              <span class="status-dot"></span>
+              <span>Analyse terminée</span>
+            </div>
+            <h3 id="resultTitle">Lecture poétique</h3>
+            <p id="resultText"></p>
+            <div class="meter-wrap">
+              <div class="meter-row"><span>Émotion</span><strong id="emotionValue">84%</strong></div>
+              <div class="meter"><span id="emotionBar"></span></div>
+            </div>
+            <div class="keywords" id="keywords"></div>
+            <div class="mini-grid">
+              <div><span>Thème dominant</span><strong id="themeValue">Espoir</strong></div>
+              <div><span>Ambiance</span><strong id="moodValue">Contemplative</strong></div>
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="section experience-section" id="experience">
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div>
+          <p class="kicker">EXPÉRIENCE INTERACTIVE</p>
+          <h2>Du patrimoine visuel au message poétique</h2>
+        </div>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-image">
+          <img id="experienceImage" src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg" alt="Tozeur">
+          <div class="exp-shade"></div>
+          <div class="floating-word word1">Mémoire</div>
+          <div class="floating-word word2">Espoir</div>
+          <div class="floating-word word3">Liberté</div>
+          <div class="floating-word word4">Identité</div>
+        </div>
+        <div class="exp-content">
+          <span class="pill">Mode inspiration</span>
+          <h3 id="experienceTitle">Tozeur : mémoire & horizon</h3>
+          <p id="experienceText">Choisis une ambiance pour voir comment un même paysage peut transmettre plusieurs lectures poétiques.</p>
+          <div class="mood-buttons">
+            <button class="mood active" data-mood="espoir">Espoir</button>
+            <button class="mood" data-mood="memoire">Mémoire</button>
+            <button class="mood" data-mood="liberte">Liberté</button>
+          </div>
+          <div class="generated-card">
+            <span>INTERPRÉTATION IA</span>
+            <p id="generatedText">Un paysage lumineux devient un symbole de continuité : le passé nourrit la création du futur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section assistant-section" id="assistant">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div>
+          <p class="kicker">ASSISTANT IA</p>
+          <h2>Pose une question sur la poésie tunisienne</h2>
+        </div>
+      </div>
+
+      <div class="chat-shell reveal">
+        <div class="chat-head">
+          <div class="bot-avatar">✦</div>
+          <div><strong>Poésie AI Assistant</strong><span>Prototype éducatif</span></div>
+          <span class="online">● En ligne</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+          <div class="message bot">Bonjour ! Je peux t'aider à comprendre les thèmes, les symboles et le rôle de la poésie tunisienne dans notre patrimoine.</div>
+        </div>
+        <div class="quick-questions">
+          <button data-question="Pourquoi la poésie est-elle importante pour le patrimoine tunisien ?">Pourquoi la poésie est-elle importante ?</button>
+          <button data-question="Quels thèmes retrouve-t-on souvent dans la poésie tunisienne ?">Quels thèmes retrouve-t-on ?</button>
+          <button data-question="Comment l'IA peut-elle aider les jeunes à découvrir la poésie ?">Comment l'IA peut-elle aider ?</button>
+        </div>
+        <form class="chat-input" id="chatForm">
+          <input id="chatInput" type="text" placeholder="Écris ta question..." autocomplete="off">
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-heading reveal">
+        <span class="section-number">06</span>
+        <div>
+          <p class="kicker">PHOTOGRAPHIES RÉELLES</p>
+          <h2>Le patrimoine tunisien en images</h2>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure class="reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Abou-El-Kacem-Chebbi.jpg" alt="Représentation réelle d'Aboul Kacem Chebbi">
+          <figcaption>Aboul Kacem Chebbi</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Graffiti%20portrait%20Abou%20el%20Kacem%20Chebbi%20%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%AA%D9%8A%20%D8%B5%D9%88%D8%B1%D8%A9%20%D9%84%D8%A3%D8%A8%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D8%A8%D9%8A.jpg" alt="Graffiti d'Aboul Kacem Chebbi à La Marsa">
+          <figcaption>Chebbi dans l'espace urbain</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Old%20CityTozeur%20Tozeur%2095.jpg" alt="Médina de Tozeur">
+          <figcaption>Tozeur, ville de mémoire</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medina%20de%20TUNIS.jpg" alt="Médina de Tunis">
+          <figcaption>Médina de Tunis</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section qr-section" id="qr">
+      <div class="qr-card reveal">
+        <div>
+          <p class="kicker">ACCÈS RAPIDE</p>
+          <h2>Scanne le QR Code</h2>
+          <p>Une fois le projet publié sur GitHub Pages avec le dépôt <strong>poesie-ai</strong>, ce QR Code ouvre directement le site.</p>
+          <code>malekchallouf007-ai.github.io/poesie-ai/</code>
+        </div>
+        <div class="qr-box">
+          <img src="qr-poesie-ai.png" alt="QR Code POÉSIE AI">
+          <span>POÉSIE AI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section credits-section">
+      <div class="credits reveal">
+        <strong>Crédits des photographies réelles :</strong>
+        Wikimedia Commons — Aboul Kacem Chebbi (domaine public), photographies de Tozeur et de la Médina de Tunis selon les licences indiquées sur leurs pages respectives.
+      </div>
+    </section>
+  
+<section class="section maquette-section" id="maquette">
+  <div class="section-heading reveal">
+    <span class="section-number">07</span>
+    <div>
+      <span class="section-kicker">MODÉLISATION • MAQUETTE</span>
+      <h2>Notre solution en modèle réel</h2>
+      <p>Une maquette interactive qui représente le problème de pollution, la solution basée sur l’intelligence artificielle et notre vision d’une Tunisie plus propre et plus durable.</p>
+    </div>
+  </div>
+  <div class="maquette-card reveal">
+    <img src="maquette-poesie-ai.png" alt="Maquette POÉSIE AI : pollution, intelligence artificielle et solution écologique">
+    <div class="maquette-caption">
+      <span>🌱 Problème</span><span>🤖 Solution IA</span><span>♻️ Action</span><span>🇹🇳 Futur durable</span>
+    </div>
+  </div>
+</section>
+
+<section class="video-section" id="video-poesie">
+  <div class="section-kicker">VIDÉO • YA TOUNES EL KHADHRA</div>
+  <h2>La poésie en mouvement</h2>
+  <p class="section-intro">Une séquence vidéo intégrée à l'expérience pour donner une dimension audiovisuelle au message du projet.</p>
+  <div class="video-card">
+    <video controls playsinline preload="metadata" poster="https://commons.wikimedia.org/wiki/Special:FilePath/Tozeur%20at%20night%20-%20Bled%20El%20Hadhar%20old%20town%20%28Tunisia%29.jpg">
+      <source src="ya-tounes-el-khadhra.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la lecture vidéo.
+    </video>
+    <div class="video-caption">
+      <span>✦ POÉSIE AI</span>
+      <strong>Ya Tounes El Khadhra</strong>
+      <p>Vidéo fournie pour le projet.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">✒</span><span>POÉSIE <strong>AI</strong></span></div>
+    <p>Projet éducatif • Tunisie • 2026</p>
+    <a href="#accueil">Retour en haut ↑</a>
+  
+<section class="poem-section" id="ya-tounes">
+  <div class="section-kicker">EXPÉRIENCE POÉTIQUE • 05</div>
+  <h2>« Ya Tounes El Khadhra » — espace poésie</h2>
+  <p class="section-intro">
+    Une création originale inspirée de l’attachement à la Tunisie, à sa terre,
+    à sa mémoire et à son avenir. Le texte ci-dessous est inédit et peut servir
+    de support à l’expérience IA.
+  </p>
+
+  <div class="poem-card">
+    <div class="poem-visual">
+      <div class="poem-glow"></div>
+      <span class="poem-badge">🇹🇳 POÉSIE TUNISIENNE</span>
+      <h3>Ya Tounes El Khadhra</h3>
+      <p>Terre de mémoire, de lumière et d’espoir.</p>
+      <button class="poem-play" id="poemRevealBtn" type="button">✦ Révéler le poème</button>
+    </div>
+
+    <div class="poem-text" id="poemText">
+      <p class="poem-line">Ya Tounes el khadhra, ya terre qui nous rassemble,</p>
+      <p class="poem-line">dans tes rues la mémoire avance et le rêve ressemble.</p>
+      <p class="poem-line">Entre la mer et les oliviers, ton histoire nous appelle,</p>
+      <p class="poem-line">et chaque voix porte un espoir nouveau sous ton ciel.</p>
+      <p class="poem-line">Nous gardons tes mots, tes couleurs et tes traces,</p>
+      <p class="poem-line">pour bâtir demain sans oublier nos racines et nos places.</p>
+      <p class="poem-line">Ya Tounes, notre mémoire devient lumière,</p>
+      <p class="poem-line">et notre jeunesse écrit une nouvelle page, fière.</p>
+      <div class="poem-note">Texte original créé pour le projet POÉSIE AI.</div>
+    </div>
+  </div>
+</section>
+
+</footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
